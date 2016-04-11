@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.shortener.ApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.743 sec <<< FAILURE! - in com.shortener.ApplicationTest
+shouldGenerateUnicHash(com.shortener.ApplicationTest)  Time elapsed: 0.164 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.shortener.ApplicationTest.shouldGenerateUnicHash(ApplicationTest.java:140)
+

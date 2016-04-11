@@ -1,0 +1,9 @@
+shortener:
+  build: shortener
+  ports:
+   - "81:8080"
+  links:
+   - redis
+
+redis:
+    image: redis

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shortener.ApplicationTest" time="0.711" tests="8" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="idea.version" value="15.0.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/i386"/>
+    <property name="java.vm.version" value="25.74-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7541"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/isvaldo/workspace/Shortener"/>
+    <property name="java.runtime.version" value="1.8.0_74-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="i386"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/isvaldo/Downloads/idea-IU-143.382.35 (2)/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/home/isvaldo/Downloads/idea-IU-143.382.35 (2)/bin::/usr/java/packages/lib/i386:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers"/>
+    <property name="os.version" value="3.16.0-67-generic"/>
+    <property name="user.home" value="/home/isvaldo"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="idea.launcher.bin.path" value="/home/isvaldo/Downloads/idea-IU-143.382.35 (2)/bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="isvaldo"/>
+    <property name="java.class.path" value="/home/isvaldo/Downloads/idea-IU-143.382.35 (2)/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/home/isvaldo/Downloads/idea-IU-143.382.35 (2)/lib/idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.1 test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_74"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/isvaldo/Downloads/idea-IU-143.382.35 (2)/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="shouldGenerateUnicHash" classname="com.shortener.ApplicationTest" time="0.164">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.shortener.ApplicationTest.shouldGenerateUnicHash(ApplicationTest.java:140)
+</failure>
+    <system-out><![CDATA[20:02:59.610 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.shortener.ApplicationTest]
+20:02:59.623 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:02:59.630 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:02:59.668 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.shortener.ApplicationTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+20:02:59.699 [main] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@128c152 declaringClass = 'com.shortener.ApplicationTest', classes = '{class com.shortener.Application}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+20:02:59.709 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.shortener.ApplicationTest]: class path resource [com/shortener/ApplicationTest-context.xml] does not exist
+20:02:59.710 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.shortener.ApplicationTest]: class path resource [com/shortener/ApplicationTestContext.groovy] does not exist
+20:02:59.710 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.shortener.ApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:02:59.715 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.shortener.ApplicationTest]
+20:02:59.721 [main] DEBUG o.s.t.c.w.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [com.shortener.ApplicationTest]: using defaults.
+20:02:59.734 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:02:59.757 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fc5fb8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7aecef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@150efb8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d773b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@173f6d9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7f6b8c]
+20:02:59.763 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shortener.ApplicationTest]
+20:02:59.765 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shortener.ApplicationTest]
+20:02:59.770 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.shortener.ApplicationTest]
+20:02:59.771 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:02:59.771 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:02:59.772 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.shortener.ApplicationTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+20:02:59.775 [main] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@c1670b declaringClass = 'com.shortener.ApplicationTest', classes = '{class com.shortener.Application}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+20:02:59.776 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.shortener.ApplicationTest]: class path resource [com/shortener/ApplicationTest-context.xml] does not exist
+20:02:59.777 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.shortener.ApplicationTest]: class path resource [com/shortener/ApplicationTestContext.groovy] does not exist
+20:02:59.777 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.shortener.ApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:02:59.777 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.shortener.ApplicationTest]
+20:02:59.778 [main] DEBUG o.s.t.c.w.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [com.shortener.ApplicationTest]: using defaults.
+20:02:59.781 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:02:59.782 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1b5cd00, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@285225, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@113b13f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1820e51, org.springframework.test.context.transaction.TransactionalTestExecutionListener@d8062c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@43cd28]
+20:02:59.782 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shortener.ApplicationTest]
+20:02:59.783 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shortener.ApplicationTest]
+20:02:59.784 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shortener.ApplicationTest]
+20:02:59.785 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shortener.ApplicationTest]
+20:02:59.788 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@13a4b84 testClass = ApplicationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@27f723 testClass = ApplicationTest, locations = '{}', classes = '{class com.shortener.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+20:02:59.789 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shortener.ApplicationTest]
+20:02:59.789 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shortener.ApplicationTest]
+20:02:59.900 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+20:02:59.903 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+20:02:59.904 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+20:02:59.906 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2016-04-09 20:03:00.471  INFO 14013 --- [           main] com.shortener.ApplicationTest            : Starting ApplicationTest on isvaldoPC with PID 14013 (/home/isvaldo/workspace/Shortener/target/test-classes started by isvaldo in /home/isvaldo/workspace/Shortener)
+2016-04-09 20:03:00.472  INFO 14013 --- [           main] com.shortener.ApplicationTest            : No active profile set, falling back to default profiles: default
+2016-04-09 20:03:00.571  INFO 14013 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@afe297: startup date [Sat Apr 09 20:03:00 BRT 2016]; root of context hierarchy
+2016-04-09 20:03:01.540  INFO 14013 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-04-09 20:03:03.250  INFO 14013 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@afe297: startup date [Sat Apr 09 20:03:00 BRT 2016]; root of context hierarchy
+2016-04-09 20:03:03.342  INFO 14013 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.shortener.application.controller.ShortenerDispatcherController.index(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2016-04-09 20:03:03.344  INFO 14013 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/info]}" onto public java.util.List<com.shortener.domain.entities.Shortener> com.shortener.application.controller.ShortenerApiController.info()
+2016-04-09 20:03:03.344  INFO 14013 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/create],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.shortener.application.controller.ShortenerApiController.create(java.lang.String,java.lang.String)
+2016-04-09 20:03:03.347  INFO 14013 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-04-09 20:03:03.355  INFO 14013 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-04-09 20:03:03.398  INFO 14013 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-04-09 20:03:03.398  INFO 14013 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-04-09 20:03:03.459  INFO 14013 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-04-09 20:03:03.768  INFO 14013 --- [           main] com.shortener.ApplicationTest            : Started ApplicationTest in 3.845 seconds (JVM running for 4.759)
+2016-04-09 20:03:03.808  INFO 14013 --- [           main] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-04-09 20:03:03.808  INFO 14013 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-04-09 20:03:03.829  INFO 14013 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 21 ms
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnResponseOnRedirectNotFound" classname="com.shortener.ApplicationTest" time="0.253"/>
+  <testcase name="shouldBeRedirectedTest" classname="com.shortener.ApplicationTest" time="0.234"/>
+  <testcase name="shouldReturnResponseOnCreated" classname="com.shortener.ApplicationTest" time="0.011"/>
+  <testcase name="shouldReturnError101Test" classname="com.shortener.ApplicationTest" time="0.014"/>
+  <testcase name="shouldReturnError102Test" classname="com.shortener.ApplicationTest" time="0.009"/>
+  <testcase name="shouldReturnResponseOnCreatedAlreadyExists" classname="com.shortener.ApplicationTest" time="0.014"/>
+  <testcase name="shouldBeCreatedTest" classname="com.shortener.ApplicationTest" time="0.012"/>
+</testsuite>
