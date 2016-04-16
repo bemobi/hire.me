@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.shortener.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.833 sec - in com.shortener.ApplicationTests
