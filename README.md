@@ -1,91 +1,33 @@
+[![Stories in Ready](https://badge.waffle.io/isvaldo/hire.me.png?label=ready&title=Ready)](https://waffle.io/isvaldo/hire.me)
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+![Bateria de testes](https://codeship.com/projects/bbbf6bf0-e1ba-0133-e590-4a308660d35a/status?branch=master)
 # Hire.me
-Um pequeno projeto para testar suas habilidades como programador.
 
-## Instruções Gerais
+### Stack Tecnológico
 
-1. *Clone* este repositório
-2. Em seu *fork*, atenda os casos de usos especificados e se desejar também os bonus points
-3. Envio um e-mail para rh@bemobi.com.br com a seu Nome e endereço do repositorio.
+* Framework: Spring-boot
+* Database: Redis
+* Infra: Docker, Linux, CodeShip
+* Testes: Junit4/MockMvc
 
-## Projeto
-
-O projeto consiste em reproduzir um encurtador de URL's (apenas sua API), simples e com poucas funções, porém com espaço suficiente para mostrar toda a gama de desenho de soluções, escolha de componentes, mapeamento ORM, uso de bibliotecas de terceiros, uso de GIT e criatividade.
-
-O projeto consiste de dois casos de uso: 
-
-1. Shorten URL
-2. Retrieve URL
-
-### 1 - Shorten URL
-![Short URL](http://i.imgur.com/MFB7VP4.jpg)
-
-1. Usuario chama a API passando a URL que deseja encurtar e um parametro opcional **CUSTOM_ALIAS**
-    1. Caso o **CUSTOM_ALIAS** já exista, um erro especifico ```{ERR_CODE: 001, Description:CUSTOM ALIAS ALREADY EXISTS}``` deve ser retornado.
-    2. Toda URL criada sem um **CUSTOM_ALIAS** deve ser reduzida a um novo alias, **você deve sugerir um algoritmo para isto e o porquê.**
-    
-2. O Registro é colocado em um repositório (*Data Store*)
-3. É retornado para o cliente um resultado que contenha a URL encurtada e outros detalhes como
-    1. Quanto tempo a operação levou
-    2. URL Original
-
-Exemplos (Você não precisa seguir este formato):
-
-* Chamada sem CUSTOM_ALIAS
-```
-PUT http://shortener/create?url=http://www.bemobi.com.br
-
-{
-   "alias": "XYhakR",
-   "url": "http://shortener/u/XYhakR",
-   "statistics": {
-       "time_taken": "10ms",
-   }
-}
-```
-
-* Chamada com CUSTOM_ALIAS
-```
-PUT http://shortener/create?url=http://www.bemobi.com.br&CUSTOM_ALIAS=bemobi
-
-{
-   "alias": "bemobi",
-   "url": "http://shortener/u/bemobi",
-   "statistics": {
-       "time_taken": "12ms",
-   }
-}
-```
-
-* Chamada com CUSTOM_ALIAS que já existe
-```
-PUT http://shortener/create?url=http://www.github.com&CUSTOM_ALIAS=bemobi
-
-{
-   "alias": "bemobi",
-   "err_code": "001",
-   "description": "CUSTOM ALIAS ALREADY EXISTS"
-}
-```
-
-### 2 - Retrieve URL
-![Retrieve URL](http://i.imgur.com/f9HESb7.jpg)
-
-1. Usuario chama a API passando a URL que deseja acessar
-    1. Caso a **URL** não exista, um erro especifico ```{ERR_CODE: 002, Description:SHORTENED URL NOT FOUND}``` deve ser retornado.
-2. O Registro é lido de um repositório (*Data Store*)
-3. Esta tupla ou registro é mapeado para uma entidade de seu projeto
-3. É retornado para o cliente um resultado que contenha a URL final, a qual ele deve ser redirecionado automaticamente
-
-## Stack Tecnológico
-
-Hoje na Bemobi somos fãs do [Spring Framework](https://spring.io/), mas você pode utilizar qualquer linguagem que rode na JVM para realizar este teste.
-
-Não há requerimentos específicos de ferramentas de ORM, banco de dados a ser utilizado e requisitos não funcionais como escalabilidade e manutenibilidade, mas não quer dizer que eles não serão avaliados durante a leitura do seu código.
 
 ## Bonus Points
+   
+- [x] Crie testcases para todas as funcionalidades criadas
+- [x] Crie um endpoint que mostre as dez URL's mais acessadas
+- [x] Crie um client em uma das linguagens que rodam na JVM para chamar sua API
+- [x] Faça um diagrama de sequencia da implementação feita nos casos de uso (Dica, use o https://www.websequencediagrams.com/)
+- [x] Monte um deploy da sua solução utilizando containers
 
-1. Crie *testcases* para todas as funcionalidades criadas
-2. Crie um *endpoint* que mostre as dez *URL's* mais acessadas 
-3. Crie um *client* em uma das linguagens que rodam na JVM para chamar sua API
-4. Faça um diagrama de sequencia da implementação feita nos casos de uso (Dica, use o https://www.websequencediagrams.com/)
-5. Monte um deploy da sua solução utilizando containers 
+## Casos de usos
+![Diagrama](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgU2hvcnRlbmVyCgpDbGllbnQtPgAKCTogUE9TVCBodHRwOi8vcG9nLm5pbmphL3MAKwlub3RlIHJpZ2h0IG9mIAA7BgogICAgewABBXVybDoANwh6ZWxkYS5jb20AGwVjdXN0b21OYW1lOiBiZW1vYmkAMgV9CmVuZCBub3RlCgoKCgpvcHQAHwsgPT0gbnVsbABcBQCBLwkAgSMNdmFsaWRhdGVEYXRhKCkAgQUFbG9vcCBnZW5lcmF0ZU5leEhhc2gAMhBEYXRhYmFzZTogY2hlY2tJZkV4aXN0ADoHABUIAIIMDVJldHVybnMgb2sgKGJyZWFrKQplbmQKCmVuZAoKAEUVQwBODG5hbWUpABEXYWxscyBzZXQodXJsLCBuYW1lLCB2aWV3cykKAGwfAG0NAINIBjogSFRUUCAyMDE6IENyZWF0ZWQAgy8GbGVmAIMvBQCDdgoAgy0KYWxpYXM6IACDLQUsAIM_CiIAg3gRAIM0BgAdBnN0YXRpc3RpY3M6AIN3ByAgICB0aW1lOiAxMG1zIH0Ag04UAIRhE0dFAIQ3PG4AhDYdAIJXG2dlAIMPCACCRiEAgkwaMDoAgwIFAIIvM3RhcmdldFUAgkwcAIZUBQCEBQU6IDAAhh0MAIclFFUAhmJWAIJCHQCFNRtmaW5kQnlOYW1lAIV1BwCGOR0AiQwJIE9iamVjdACFV1MAhWobcmVzb3VyY2UgdXBkYXRlZCBzdWNjZXNzZnVsbHkAgVkWAIN1EgAnHgCKWBVERUxFVEUAhSRYAIIodWRlbGV0AINrCACCTyUALAYAglsZAIlHOwCDCQwAURUAiGQpAI0qBwCFUxxldGNoAItEIgCEWwYoAIs6JACOfgdleGFtcGxlAI5DBQCLVRgzMDI6IFJlZGlyZWN0cyB0bwCPPQUAjnYSCg&s=napkin)
+## Deploy/Test/infra
+
+### Deploy
+
+![Diagrama](/src/docs/flux.png)
+
+### Testes
+
+![Diagrama](/src/docs/testeflux.png)
+
