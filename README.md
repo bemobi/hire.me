@@ -5,7 +5,7 @@ Um pequeno projeto para testar suas habilidades como programador.
 
 1. *Clone* este repositório
 2. Em seu *fork*, atenda os casos de usos especificados e se desejar também os bonus points
-3. Envio um e-mail para rh@bemobi.com.br com a seu Nome e endereço do repositorio.
+3. Envie um e-mail para rh@bemobi.com.br com seu Nome e endereço do repositório.
 
 ## Projeto
 
@@ -85,5 +85,5 @@ Não há requerimentos específicos para linguagens, somos poliglotas. Utilize a
 1. Crie *testcases* para todas as funcionalidades criadas
 2. Crie um *endpoint* que mostre as dez *URL's* mais acessadas 
 3. Crie um *client* para chamar sua API
-4. Faça um diagrama de sequencia da implementação feita nos casos de uso (Dica, use o https://www.websequencediagrams.com/)
+4. Faça um diagrama de sequência da implementação feita nos casos de uso (Dica, use o https://www.websequencediagrams.com/)
 5. Monte um deploy da sua solução utilizando containers 
