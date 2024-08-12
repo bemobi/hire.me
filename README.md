@@ -5,7 +5,7 @@ Um pequeno projeto para testar suas habilidades como programador.
 
 1. *Clone* este repositório
 2. Em seu *fork*, atenda os casos de usos especificados e se desejar também os bonus points
-3. Envio um e-mail para rh@bemobi.com.br com a seu Nome e endereço do repositorio.
+3. Envio um e-mail para talent@bemobi.com com a seu Nome e endereço do repositorio.
 
 ## Projeto
 
