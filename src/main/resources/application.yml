@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: url-mapping
+  datasource:
+    url: jdbc:postgres://root:root@localhost:5435/urlmapping
+    username: root
+    password: root
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  feign:
+    client:
+      config:
+        default:
+          connectTimeout: 5000
+          readTimeout: 5000
+  logging:
+    level:
+      org.springframework.cloud.openfeign: DEBUG
+
+base-url-service: http://localhost:8080/u/
+
+
